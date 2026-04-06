@@ -1,8 +1,8 @@
--- config for general use in rifles (like D-19, BR-18)
+-- config for general use in pistols
 
 return {
-	HumanoidDamage = 16,
-	HeadshotMultiplier = 1.5,
+	HumanoidDamage = 12,
+	HeadshotMultiplier = 1,
 	CanDamageSelf = false,
 	CanDamageFriendly = false,
 
@@ -22,13 +22,7 @@ return {
 		},
 	},
 
-	ObjectDamageConfig = {
-		["NoArmor"] = 5,
-	},
-
-	CanSuppress = true,
-
-	MaxDistance = 3000,
+	MaxDistance = 1000,
 	
 	EnableDropoff = true,
 	DropoffConfig = {

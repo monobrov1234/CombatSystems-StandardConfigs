@@ -1,8 +1,8 @@
--- config for general use in rifles (like D-19, BR-18)
+-- revolver ammo
 
 return {
-	HumanoidDamage = 16,
-	HeadshotMultiplier = 1.5,
+	HumanoidDamage = 35,
+	HeadshotMultiplier = 3,
 	CanDamageSelf = false,
 	CanDamageFriendly = false,
 
@@ -23,16 +23,16 @@ return {
 	},
 
 	ObjectDamageConfig = {
-		["NoArmor"] = 5,
+		["NoArmor"] = 15,
 	},
 
 	CanSuppress = true,
 
-	MaxDistance = 3000,
+	MaxDistance = 1500,
 	
 	EnableDropoff = true,
 	DropoffConfig = {
-		DropoffStartDistance = 60,
-		DropoffEndDistance = 1200,
+		DropoffStartDistance = 2000,
+		DropoffEndDistance = 2000,
 	}
 }

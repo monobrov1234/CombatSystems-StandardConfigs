@@ -1,9 +1,11 @@
+local assets = game:GetService("ReplicatedStorage").CombatSystemsShared.TurretSystem.Assets.Configs[script.Name]
+
 return {
 	DecorConfig = {
 		SoundsConfig = {
-			FireSound = script.Fire,
-			ReloadSound = script.Reload,
-			SwitchSound = script.Reload,
+			FireSound = assets.Fire,
+			ReloadSound = assets.Reload,
+			SwitchSound = assets.Reload,
 			TraverseStartSound = false,
 			TraverseSound = false,
 			TraverseEndSound = false,

@@ -1,3 +1,5 @@
+local assets = game:GetService("ReplicatedStorage").CombatSystemsShared.GunSystem.Assets.Configs[script.Name]
+
 return {
 	Description = "Training Rifle",
 
@@ -8,10 +10,10 @@ return {
 	AmmoType = "Training Round",
 
 	DecorConfig = {
-		AnimationsFolder = script.Animations,
+		AnimationsFolder = assets.Animations,
 		SoundsConfig = {
-			FireSound = script.Fire,
-			ReloadSound = script.Reload,
+			FireSound = assets.Fire,
+			ReloadSound = assets.Reload,
 		},
 	},
 

@@ -1,11 +1,13 @@
+local assets = game:GetService("ReplicatedStorage").CombatSystemsShared.TurretSystem.Assets.Configs[script.Name]
+
 return {
 	DropIndicatorType = "Manual",
 
 	DecorConfig = {
 		SoundsConfig = {
-			FireSound = script.Fire,
-			ReloadSound = script.Reload,
-			SwitchSound = script.SwitchReload,
+			FireSound = assets.Fire,
+			ReloadSound = assets.Reload,
+			SwitchSound = assets.SwitchReload,
 		},
 	},
 

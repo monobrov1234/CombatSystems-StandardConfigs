@@ -1,3 +1,5 @@
+local assets = game:GetService("ReplicatedStorage").CombatSystemsShared.TurretSystem.Assets.Configs[script.Name]
+
 return {
 	-- Rate of fire in Rounds Per Minute (RPM)
 	-- Examples: 6 → very slow cannon, 120 → autocannon, 600–900 → machine gun
@@ -35,9 +37,9 @@ return {
 	DecorConfig = {
 		SoundsConfig = {
 			-- Coax gun firing sound
-			FireSound = script.FireCoax,
+			FireSound = assets.FireCoax,
 			-- Coax gun reload / ready sound
-			ReloadSound = script.ReloadCoax,
+			ReloadSound = assets.ReloadCoax,
 		},
 	},
 }

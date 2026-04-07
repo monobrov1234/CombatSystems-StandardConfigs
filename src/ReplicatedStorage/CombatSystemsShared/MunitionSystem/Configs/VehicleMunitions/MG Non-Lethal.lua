@@ -8,7 +8,7 @@ return {
 
 		TrailFXHandler = {
 			HandlerModuleName = "FakeProjectileTrailFXHandler",
-			HandlerConfig = { CosmeticBullet = script.Bullet },
+			HandlerConfig = { CosmeticBullet = game:GetService("ReplicatedStorage").CombatSystemsShared.MunitionSystem.Assets.Configs._CommonBullet },
 		},
 
 		ImpactFXHandler = {

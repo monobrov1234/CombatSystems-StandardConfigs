@@ -1,3 +1,5 @@
+local assets = game:GetService("ReplicatedStorage").CombatSystemsShared.GunSystem.Assets.Configs[script.Name]
+
 return {
 	Description = "9mm Pistol",
 
@@ -9,10 +11,10 @@ return {
 	AmmoType = "9mm",
 
 	DecorConfig = {
-		AnimationsFolder = script.Animations,
+		AnimationsFolder = assets.Animations,
 		SoundsConfig = {
-			FireSound = script.Fire,
-			ReloadSound = script.Reload,
+			FireSound = assets.Fire,
+			ReloadSound = assets.Reload,
 		},
 	},
 

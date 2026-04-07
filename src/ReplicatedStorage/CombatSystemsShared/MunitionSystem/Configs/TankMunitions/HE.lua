@@ -1,3 +1,5 @@
+local assets = game:GetService("ReplicatedStorage").CombatSystemsShared.MunitionSystem.Assets.Configs[script.Name]
+
 return {
 	HumanoidDamage = 100,
 
@@ -8,7 +10,7 @@ return {
 
 		TrailFXHandler = {
 			HandlerModuleName = "CosmeticBulletTrailFXHandler",
-			HandlerConfig = { CosmeticBullet = script.HEBullet },
+			HandlerConfig = { CosmeticBullet = assets.HEBullet },
 		},
 
 		ImpactFXHandler = {

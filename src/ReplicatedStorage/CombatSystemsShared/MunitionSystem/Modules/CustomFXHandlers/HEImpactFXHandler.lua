@@ -13,7 +13,7 @@ local MunitionSystemConfig = require(ReplicatedStorage.CombatSystemsShared.Munit
 local MunitionRayHitInfo = require(ReplicatedStorage.CombatSystemsShared.MunitionSystem.Modules.SharedEntities.RayInfo.MunitionRayHitInfo)
 
 -- ROBLOX OBJECTS
-local assets = ReplicatedStorage.CombatSystemsShared.MunitionSystem.Assets.ClientFXHandler.ImpactFXHandler:WaitForChild(script.Name)
+local assets = ReplicatedStorage.CombatSystemsShared.MunitionSystem.Assets.ClientFXHandler.ImpactFXHandler:WaitForChild("HEImpactFXHandler")
 
 type HandlerConfig = {
 	ExplosionType: "Small" | "Normal",

@@ -14,7 +14,7 @@ local MunitionController = require(PlayerScripts.CombatSystemsClient.MunitionSys
 local MunitionRayHitInfo = require(ReplicatedStorage.CombatSystemsShared.MunitionSystem.Modules.SharedEntities.RayInfo.MunitionRayHitInfo)
 
 -- ROBLOX OBJECTS
-local assets = ReplicatedStorage.CombatSystemsShared.MunitionSystem.Assets.ClientFXHandler.ImpactFXHandler:WaitForChild(script.Name)
+local assets = ReplicatedStorage.CombatSystemsShared.MunitionSystem.Assets.ClientFXHandler.ImpactFXHandler:WaitForChild("APDSImpactFXHandler")
 
 function funcs.handleRayEnded(ray: MunitionController.RayInfo, hit: MunitionRayHitInfo.Common)
 	local handler = ray.MunitionConfig.FXConfig.ImpactFXHandler

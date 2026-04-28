@@ -33,7 +33,7 @@ return {
 		},
 
 		EnableCoax = true,
-		CoaxConfig = require(script.Parent.Coax["Tank 7.62mm"]),
+		CoaxConfig = require(script.Parent.Parent.Coax["Tank 7.62mm"]),
 	},
 
 	LimitsConfig = {

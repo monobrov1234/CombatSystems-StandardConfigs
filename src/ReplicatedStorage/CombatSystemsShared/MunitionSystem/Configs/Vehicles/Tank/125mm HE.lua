@@ -1,7 +1,7 @@
 local assets = game:GetService("ReplicatedStorage").CombatSystemsShared.MunitionSystem.Assets.Configs[script.Name]
 
 return {
-	HumanoidDamage = 150,
+	HumanoidDamage = 100,
 
 	FXConfig = {
 		ShootFXHandler = {
@@ -10,22 +10,33 @@ return {
 
 		TrailFXHandler = {
 			HandlerModuleName = "CosmeticBulletTrailFXHandler",
-			HandlerConfig = { CosmeticBullet = assets.APBullet },
+			HandlerConfig = { CosmeticBullet = assets.HEBullet },
 		},
 
 		ImpactFXHandler = {
-			HandlerModuleName = "APDSImpactFXHandler",
-			HandlerConfig = {}
+			HandlerModuleName = "HEImpactFXHandler",
+			HandlerConfig = {
+				ExplosionType = "Normal"
+			}
 		},
 	},
 
 	ObjectDamageConfig = {
-		["NoArmor"] = 150,
-		["BulletProofArmor"] = 150,
-		["LightArmor"] = 50,
-		["MediumArmor"] = 35,
-		["MediumHeavyArmor"] = 10,
-		["HeavyArmor"] = 1,
+		["NoArmor"] = 60,
+		["BulletProofArmor"] = 30,
+		["LightArmor"] = 2,
+	},
+
+	ExplosionConfig = {
+		CanExplode = true,
+		HumanoidDamage = 110,
+		Radius = 16,
+		DropoffStartRadius = 7,
+
+		ObjectDamageConfig = {
+			["NoArmor"] = 40,
+			["BulletProofArmor"] = 40,
+		},
 	},
 
 	CanSuppress = true,
@@ -33,7 +44,7 @@ return {
 	SuppressionConfig = {
 		EnableTense = true,
 		TenseConfig = {
-			StayTime = 2,
+			StayTime = 3,
 			TransparencyMultiplier = 0.1,
 			FadeOutTimeMultiplier = 2,
 		},
@@ -41,18 +52,17 @@ return {
 		EnableCameraShake = true,
 		TrailCameraShakeConfig = nil,
 		ImpactCameraShakeConfig = {
-			MagnitudeMult = 5,
-			Roughness = 10,
+			MagnitudeMult = 6,
+			Roughness = 13,
 			FadeInTime = 0,
-			FadeOutTime = 0.3,
-			PosInfluence = Vector3.new(0.35, 0.35, 0.35),
-			RotInfluence = Vector3.new(10, 10, 1),
+			FadeOutTime = 0.45,
+			PosInfluence = Vector3.new(0.5, 0.5, 0.5),
+			RotInfluence = Vector3.new(18, 18, 1),
 		},
 	},
 
 	EnableBallistics = true,
 	BallisticConfig = {
-		Speed = 750,
-		HighFidelitySegmentSize = 0.25,
+		Speed = 800,
 	},
 }

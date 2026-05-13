@@ -18,7 +18,7 @@ return {
 		ReloadDuration = 3,
 
 		AmmoTypes = {
-			{ name = "MG Non-Lethal", stored = 500 },
+			{ name = ".50 BMG", stored = 500 },
 		},
 
 		SpreadConfig = {

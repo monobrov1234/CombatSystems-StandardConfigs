@@ -16,8 +16,8 @@ return {
 		ClipSize = 1,
 		ReloadDuration = 5.5,
 		AmmoTypes = {
-			{ name = "APDS", stored = 50 },
-			{ name = "HE", stored = 30 },
+			{ name = "120mm APDS", stored = 50 },
+			{ name = "120mm HE", stored = 30 },
 		},
 
 		SpreadConfig = {
@@ -33,7 +33,7 @@ return {
 		},
 
 		EnableCoax = true,
-		CoaxConfig = require(script.Parent.Parent.Coax["Tank 7.62mm"]),
+		CoaxConfig = require(game:GetService("ReplicatedStorage").CombatSystemsShared.TurretSystem.Configs.Coax["Tank 7.62mm"]),
 	},
 
 	LimitsConfig = {

@@ -1,5 +1,5 @@
 return {
-	HumanoidDamage = 0.5,
+	HumanoidDamage = 10,
 
 	FXConfig = {
 		ShootFXHandler = {
@@ -20,7 +20,7 @@ return {
 	CanSuppress = true,
 	CanSuppressImpact = false,
 	SuppressionConfig = {
-		EnableTense = false,
+		EnableTense = true,
 		TenseConfig = {
 			StayTime = 1,
 			TransparencyMultiplier = 1,
@@ -34,12 +34,12 @@ return {
 			FadeInTime = 0.1,
 			FadeOutTime = 0.2,
 			PosInfluence = Vector3.new(0.15, 0.15, 0.15),
-			RotInfluence = Vector3.new(0.6, 0.6, 0.6),
+			RotInfluence = Vector3.new(0.8, 0.8, 0.8),
 		},
 	},
 
 	ObjectDamageConfig = {
-		["NoArmor"] = 0.2,
-		["BulletProofArmor"] = 0.05,
+		["NoArmor"] = 4,
+		["BulletProofArmor"] = 2,
 	},
 }

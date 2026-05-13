@@ -1,5 +1,5 @@
 return {
-	HumanoidDamage = 12,
+	HumanoidDamage = 20,
 
 	FXConfig = {
 		ShootFXHandler = {
@@ -29,17 +29,17 @@ return {
 
 		EnableCameraShake = true,
 		TrailCameraShakeConfig = {
-			MagnitudeMult = 1,
-			Roughness = 4,
+			MagnitudeMult = 2,
+			Roughness = 5,
 			FadeInTime = 0.1,
-			FadeOutTime = 0.2,
-			PosInfluence = Vector3.new(0.15, 0.15, 0.15),
-			RotInfluence = Vector3.new(0.8, 0.8, 0.8),
+			FadeOutTime = 0.3,
+			PosInfluence = Vector3.new(0.25, 0.25, 0.25),
+			RotInfluence = Vector3.new(1, 1, 1),
 		},
 	},
 
 	ObjectDamageConfig = {
-		["NoArmor"] = 5,
-		["BulletProofArmor"] = 2,
+		["NoArmor"] = 10,
+		["BulletProofArmor"] = 5,
 	},
 }
